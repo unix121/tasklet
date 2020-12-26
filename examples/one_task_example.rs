@@ -1,6 +1,6 @@
-use tasklet::{TaskScheduler, Task};
+use log::{error, info};
 use simple_logger::SimpleLogger;
-use log::{info, error};
+use tasklet::{Task, TaskScheduler};
 
 /// A simple example of a task with two step,
 /// that might work or fail some times.
@@ -15,10 +15,7 @@ fn main() {
     let mut scheduler = TaskScheduler::new(2000, chrono::Local);
 
     // Create a task with 2 steps and add it to the scheduler.
-    let mut task = Task::new("1 * * * * * *",
-                             Some("A simple task"),
-                             None,
-                             chrono::Local);
+    let mut task = Task::new("1 * * * * * *", Some("A simple task"), None, chrono::Local);
     // A normal step 1.
     task.add_step(Some("Step 1"), || {
         info!("Hello from step 1");

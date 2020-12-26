@@ -14,8 +14,8 @@ pub(crate) enum ExecutionStatus {
 
 /// Task scheduler and executor.
 pub struct TaskScheduler<'a, T>
-    where
-        T: TimeZone + Clone,
+where
+    T: TimeZone + Clone,
 {
     /// The list of tasks to be executed.
     tasks: Vec<Task<'a, T>>,
@@ -31,8 +31,8 @@ pub struct TaskScheduler<'a, T>
 
 /// `TaskScheduler` implementation.
 impl<'a, T> TaskScheduler<'a, T>
-    where
-        T: TimeZone + Clone,
+where
+    T: TimeZone + Clone,
 {
     /// Create a new instance of `TaskScheduler` with no tasks to execute.
     ///

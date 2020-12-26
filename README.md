@@ -1,4 +1,9 @@
 # tasklet
+[![CircleCI](https://circleci.com/gh/unix121/tasklet.svg?style=shield)](https://circleci.com/gh/unix121/tasklet)
+![Crates.io](https://img.shields.io/crates/d/tasklet)
+![Crates.io](https://img.shields.io/crates/v/tasklet)
+![GitHub last commit](https://img.shields.io/github/last-commit/unix121/tasklet)
+
 ⏱️ A task scheduling library written in Rust
 
 ## Dependencies
