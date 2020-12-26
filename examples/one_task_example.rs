@@ -1,24 +1,3 @@
-# tasklet
-⏱️ A task scheduling library written in Rust
-
-## Dependencies
-
-* cron (0.7.0)
-* chrono (0.4.19)
-* time (0.2.23)
-* log (0.4)
-
-## Use this library
-
-In your `Cargo.toml` add:
-```
-[dependencies]
-tasklet = "0.1.0"
-```
-
-## Example
-Find more examples in the [examples](/examples) folder.
-```rust
 use tasklet::{TaskScheduler, Task};
 use simple_logger::SimpleLogger;
 use log::{info, error};
@@ -64,8 +43,3 @@ fn main() {
     // Execute the scheduler.
     scheduler.run();
 }
-```
-
-## Author
-
-Stavros Grigoriou ([unix121](github.com/unix121))
