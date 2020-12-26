@@ -3,6 +3,9 @@ name = "tasklet"
 version = "0.1.0"
 authors = ["Stavros Grigoriou <unix121@protonmail.com>"]
 edition = "2018"
+license-file = "LICENSE"
+repositoy = "https://github.com/unix121/tasklet"
+readme = "README.md"
 
 [dependencies]
 cron = "0.7.0"
